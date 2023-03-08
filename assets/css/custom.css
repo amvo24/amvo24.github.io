@@ -22,8 +22,8 @@
   background-color: #000;
 }
 
-.fields {
-
+.spotlight .content h2 {
+    margin-bottom: -40px;
 }
 
 .field {
