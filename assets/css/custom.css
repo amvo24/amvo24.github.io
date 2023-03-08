@@ -1,3 +1,7 @@
+#one {
+    min-height: 100vh;
+}
+
 .contact_0001 {
     display: flex;
     justify-content: space-between;
@@ -66,4 +70,21 @@ a.resumedownload {
 .techLogo img {
     width: 50px;
     height: auto;
+}
+
+.projectSection:hover {
+    background-color: #3d4a56b2;
+
+}
+
+
+.wrapper.alt.style2 .spotlight .image img,
+.wrapper.alt.style2 .spotlight .content .techLogoList .techLogo img {
+  filter: grayscale(100%);
+  transition: all 0.5s ease-in-out;
+}
+
+.wrapper.alt.style2 .spotlight:hover .image img,
+.wrapper.alt.style2 .spotlight:hover .content .techLogoList .techLogo img {
+  filter: grayscale(0%);
 }
