@@ -37,3 +37,33 @@ margin-bottom: 25px;
 .sourcecode {
     width: 34%;
 }
+
+a.resumedownload {
+    /* text-decoration: none; */
+    border-bottom: none;
+
+}
+
+.resume-icon-hover {
+    display: none;
+}
+
+.resumedownload:hover .resume-icon {
+    display: none;
+}
+
+.resumedownload:hover .resume-icon-hover {
+    display: block;
+}
+
+.techLogoList {
+    display: flex;
+}
+
+.techLogo {
+    list-style: none;
+}
+.techLogo img {
+    width: 50px;
+    height: auto;
+}
