@@ -41,7 +41,7 @@ const videos = {
     poster: 'images/TwitterProjectScreenshot.png'
   },
   'airbnb-section': {
-    url: 'videos/Airbnb Recording.mov',
+    url: 'videos/Airbnb Recording-2.mov',
     poster: 'images/AirbnbScreenshot.png'
   },
 //   'vimeo-section': {
