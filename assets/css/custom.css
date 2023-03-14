@@ -3,29 +3,13 @@
     min-height: 100vh;
 }
 
-.contact_0001 {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.contactInformation {
+.contactMeForm {
     display: flex;
     flex-direction: column;
+    align-items: center;
 
 }
 
-.contactMeForm, .contactInformation {
-    width: 40%;
-    height: 100%;
-
-}
-
-.verticalDivider {
-  width: 1px;
-  height: 80%;
-  background-color: #000;
-}
 
 .spotlight .content h2 {
     margin-bottom: -40px;
@@ -35,14 +19,8 @@
 margin-bottom: 25px;
 }
 
-.livelink {
-    width: 25%;
-    text-decoration: none;
-}
 
-.sourcecode {
-    width: 34%;
-}
+
 
 a.resumedownload {
     border-bottom: none;
@@ -78,7 +56,17 @@ a.resumedownload {
 
 }
 
-.wrapper.alt.style2 .spotlight .image img,
+.livelink {
+    width: 25%;
+    text-decoration: none;
+    
+}
+
+.sourcecode {
+    width: 34%;
+}
+
+.wrapper.alt.style2 .spotlight .image img, 
 .wrapper.alt.style2 .spotlight .content .techLogoList .techLogo img {
   filter: grayscale(100%);
   transition: all 0.5s ease-in-out;
@@ -89,6 +77,11 @@ a.resumedownload {
   filter: grayscale(0%);
 
 }
+
+.wrapper.alt.style2 .spotlight:hover .content a {
+    color: #ef5e4a
+  }
+
 
 .projectSection .image {
     display: flex;
@@ -146,3 +139,5 @@ a.resumedownload {
     align-items: center;
     padding-top: 10px;
 }
+
+

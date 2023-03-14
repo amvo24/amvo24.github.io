@@ -1,7 +1,10 @@
+// -------------Contact me button------------------------
 function scrollToContact() {
     let projectsSection = document.getElementById("contactMe");
     projectsSection.scrollIntoView({ behavior: 'smooth' });
-  }
+}
+
+// -------------Videos play on hover function------------
 
 // Get the section elements and video elements
 const twitterSection = document.getElementById('twitter-section');
@@ -79,7 +82,7 @@ function pauseVideo(video, poster) {
 }
 
 
-
+// ------------------Logic for menu sections to scroll----------------
 
 // Select all menu links
 const menuLinks = document.querySelectorAll('.menu-link');
@@ -92,6 +95,7 @@ menuLinks.forEach(link => {
 
     // Get the target section from the link's href attribute
     const targetId = link.getAttribute('href');
+    
 
     // Use the scrollIntoView method to scroll to the target section
     document.querySelector(targetId).scrollIntoView({
@@ -99,3 +103,7 @@ menuLinks.forEach(link => {
     });
   });
 });
+
+
+
+

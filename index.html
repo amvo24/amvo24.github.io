@@ -6,6 +6,31 @@
 -->
 <html>
 	<head>
+		<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+			<script type="text/javascript">
+				(function() {
+					// https://dashboard.emailjs.com/admin/account
+					emailjs.init('IiyRUUr25w67WyfDU');
+				})();
+			</script>
+			<script type="text/javascript">
+				window.onload = function() {
+					document.getElementById('contact-form123').addEventListener('submit', function(event) {
+						event.preventDefault();
+						// generate a five digit number for the contact_number variable
+						this.contact_number.value = Math.random() * 100000 | 0;
+						// these IDs from the previous steps
+						emailjs.sendForm('default_service', 'template_i6bgl9i', this)
+							.then(function() {
+								alert('Thank you, your mail is sent!');
+								document.getElementById('contact-form123').reset();
+								console.log('SUCCESS!');
+							}, function(error) {
+								console.log('FAILED...', error);
+							});
+					});
+				}
+			</script>
 		<title>Andrew Vo's Portfolio</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
@@ -62,7 +87,7 @@
 					</section>
 
 				<!-- About Me -->
-					<section id="one" class="wrapper style1 special">
+					<section id="one" class="wrapper style1 special" data-title="About Me">
 							<div class="inner">
 								<header class="major">
 								  <h2>Welcome to my portfolio.<br />I'm a Full Stack Software Engineer with a passion for developing innovative and user-friendly applications.<br /></h2>
@@ -218,10 +243,11 @@
 				<!-- Contact -->
 					<section id="contactMe" class="wrapper style4">
 						<div class="inner">
-							<div class="contact_0001">
+							
 								<div class="contactMeForm">
 									<h2 class="major">Contact Me</h2>
-									<form method="post" action="#">
+									<form id="contact-form123" method="post" action="#">
+										<input type="hidden" name="contact_number">
 										<div class="fields">
 											<div class="field half">
 												<label for="name">Name</label>
@@ -242,12 +268,7 @@
 										</ul>
 									</form>
 								</div>
-								<div class="contactInformation">
-									<div class="contactPhone">Phone</div>
-									<div class="contactEmail">Email</div>
-									<div  class="contactSocials">Socials</div>
-								</div>
-							</div>
+							
 						</div>
 					</section>
 				<!-- Footer -->
@@ -255,11 +276,6 @@
 						<ul class="icons">
 							<li><a href="https://github.com/amvo24" target="_blank" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
 							<li><a href="https://www.linkedin.com/in/andrewmvo/" target="_blank" class="icon brands fa-linkedin-in"><span class="label">Linked In</span></a></li>
-							<!-- <li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li> -->
-							<!-- <li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li> -->
-							<!-- <li><a href="#" class="icon brands fa-linkedin-in"><span class="label">Instagram</span></a></li>
-							<li><a href="#" class="icon brands fa-dribbble"><span class="label">Dribbble</span></a></li>
-							<li><a href="#" class="icon solid fa-envelope"><span class="label">Email</span></a></li> -->
 						</ul>
 						<ul class="copyright">
 							<li>&copy; Software Engineer Portfolio</li><li>Design: Andrew Vo
