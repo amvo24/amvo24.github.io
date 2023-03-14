@@ -1,3 +1,4 @@
+
 #one {
     min-height: 100vh;
 }
@@ -36,6 +37,7 @@ margin-bottom: 25px;
 
 .livelink {
     width: 25%;
+    text-decoration: none;
 }
 
 .sourcecode {
@@ -99,7 +101,7 @@ a.resumedownload {
 }
 
 .videotag {
-    max-width: none;
+  max-width: none;
   width: 100%;
   height: auto;
 }
@@ -112,4 +114,35 @@ a.resumedownload {
 
 .projectSection:hover .videotag {
   filter: none;
+
+}
+
+.technologiesListLabel {
+    list-style: none;
+    padding-right: 30px;
+}
+
+.technologiesUL {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-top: 10px;
+
+}
+
+.technologiesList {
+    list-style: none;
+}
+
+.technologiesListIcon {
+    width: auto;
+    height: 100px;
+}
+
+
+.frameworksUL {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-top: 10px;
 }

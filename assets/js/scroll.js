@@ -3,27 +3,6 @@ function scrollToContact() {
     projectsSection.scrollIntoView({ behavior: 'smooth' });
   }
 
-
-// // Get the section element and the video element
-// const twitterSection = document.getElementById('twitter-section');
-// const twitterVideo = twitterSection.querySelector('video');
-
-// // Add an event listener to the section element for mouseenter and mouseleave events
-// twitterSection.addEventListener('mouseenter', () => {
-//     // Set the src attribute of the video element to the URL of the video
-//     twitterVideo.src = 'videos/twitter screen recording.mov';
-//     // Play the video
-//     twitterVideo.play();
-// });
-
-// twitterSection.addEventListener('mouseleave', () => {
-//     // Pause the video
-//     twitterVideo.pause();
-//     // Set the src attribute of the video element to an empty string to stop the video from playing
-//     twitterVideo.src = '';
-//     twitterVideo.setAttribute('poster', poster);
-// });
-
 // Get the section elements and video elements
 const twitterSection = document.getElementById('twitter-section');
 const twitterVideo = twitterSection.querySelector('video');
@@ -90,8 +69,33 @@ function playVideo(video, url, poster) {
 function pauseVideo(video, poster) {
     // Pause the video
     video.pause();
-    // Set the src attribute of the video element to an empty string to stop the video from playing
-    video.src = '';
-    // Set the poster attribute of the video element back to the original poster image
-    video.setAttribute('poster', poster);
+    // Listen for the pause event on the video element
+    video.addEventListener('pause', () => {
+        // Set the src attribute of the video element to an empty string to stop the video from playing
+        video.src = '';
+        // Set the poster attribute of the video element back to the original poster image
+        video.setAttribute('poster', poster);
+    });
 }
+
+
+
+
+// Select all menu links
+const menuLinks = document.querySelectorAll('.menu-link');
+
+// Loop through each link and add a click event listener
+menuLinks.forEach(link => {
+  link.addEventListener('click', event => {
+    // Prevent the default behavior of the link (i.e. jumping to the section)
+    event.preventDefault();
+
+    // Get the target section from the link's href attribute
+    const targetId = link.getAttribute('href');
+
+    // Use the scrollIntoView method to scroll to the target section
+    document.querySelector(targetId).scrollIntoView({
+      behavior: 'smooth'
+    });
+  });
+});

@@ -31,11 +31,9 @@
 									<a href="#menu" class="menuToggle"><span>Menu</span></a>
 									<div id="menu">
 										<ul>
-											<li><a href="index.html">Home</a></li>
-											<li><a href="generic.html">Generic</a></li>
-											<li><a href="elements.html">Elements</a></li>
-											<!-- <li><a href="#">Sign Up</a></li> -->
-											<!-- <li><a href="#">Log In</a></li> -->
+											<li><a href="#one" class="menu-link">About Me</a></li>
+											<li><a href="#two" class="menu-link">Projects</a></li>
+											<li><a href="#contactMe" class="menu-link">Contact Me</a></li>
 										</ul>
 									</div>
 								</li>
@@ -46,7 +44,7 @@
 					<section id="banner">
 						<div class="inner">
 							<h2>Andrew Vo</h2>
-							<p> <span style="font-weight: bold;">full stack software engineer</span> <br />
+							<p> <span style="font-weight: bold; color: #ef5e4a">full stack software engineer</span> <br />
 								Crafting elegant solutions to complex problems <br />
 								with passion and precision.
 							</p>
@@ -63,26 +61,67 @@
 						<a href="#one" class="more scrolly">Learn More</a>
 					</section>
 
-				<!-- One -->
+				<!-- About Me -->
 					<section id="one" class="wrapper style1 special">
-						<div class="inner">
-							<header class="major">
-								<h2>Welcome to my portfolio. <br /> I'm a Full Stack Software Engineer with a passion for
-									developing innovative and user-friendly applications.<br />
-								</h2>
-								<p>Some kind of description about icons below</p>
-							</header>
-							<ul class="icons major">
-								<li><span class="icon fa-gem major style1"><span class="label">Lorem</span></span></li>
-								<li><span class="icon fa-heart major style2"><span class="label">Ipsum</span></span></li>
-								<li><span class="icon solid fa-code major style3"><span class="label">Dolor</span></span></li>
-								<li><img src="" alt=""></li>
-							</ul>
-						</div>
-						<a href="#two" class="more scrolly">Projects</a>
+							<div class="inner">
+								<header class="major">
+								  <h2>Welcome to my portfolio.<br />I'm a Full Stack Software Engineer with a passion for developing innovative and user-friendly applications.<br /></h2>
+								  <p style="font-size:x-large; font-weight: 600;">Technologies I work with:</p>
+								</header>
+								<ul class="technologiesUL">
+								  <li class="technologiesListLabel">
+									<h3>Languages:</h3>
+								  </li>
+								  <li class="technologiesList">
+									<img class="technologiesListIcon" src="images/tech logos/JavaScript-logo.png" />
+									<p>JavaScript</p>
+								  </li>
+								  <li class="technologiesList">
+									<img class="technologiesListIcon" src="images/tech logos/Python-logo-notext.svg.png" />
+									<p>Python</p>
+								  </li>
+								  <li class="technologiesList">
+									<img class="technologiesListIcon" src="images/tech logos/HTML5_logo_and_wordmark.svg.png" />
+									<p>HTML5</p>
+								  </li>
+								  <li class="technologiesList">
+									<img class="technologiesListIcon" src="images/tech logos/css3-logo-png-transparent.png" />
+									<p>CSS3</p>
+								  </li>
+								  <li class="technologiesList">
+									<img class="technologiesListIcon" src="images/tech logos/sql-server-icon-png-29.png" />
+									<p>SQL</p>
+								  </li>
+								</ul>
+								<ul class="frameworksUL">
+								  <li class="technologiesListLabel">
+									<h3>Frameworks:</h3>
+								  </li>
+								  <li class="technologiesList">
+									<img class="technologiesListIcon" class="" src="images/tech logos/flask-logo-png-transparent.png" />
+									<p>Flask</p>
+								  </li>
+								  <li class="technologiesList">
+									<img class="technologiesListIcon" class="" src="images/tech logos/kisspng-django-web-development-web-framework-python-softwa-django-5b45d914274e46.055745571531304212161.png" />
+									<p>Django</p>
+								  </li>
+								  <li class="technologiesList">
+									<img class="technologiesListIcon" class="" src="images/tech logos/React-icon.svg.png" />
+									<p>React</p>
+								  </li>
+								  <li class="technologiesList">
+									<img class="technologiesListIcon" class="" src="images/tech logos/logo.png" />
+									<p>Redux</p>
+								  </li>
+								  <li class="technologiesList">
+									<img class="technologiesListIcon" class="" src="images/tech logos/pngfind.com-js-logo-png-6833893.png" />
+									<p>Node.js</p>
+								  </li>
+								</ul>
+							</div>
 					</section>
 
-				<!-- Two -->
+				<!-- Projects -->
 					<section id="two" class="wrapper alt style2">
 						<section class="spotlight projectSection" id="twitter-section">
 							<div class="image">
@@ -118,12 +157,12 @@
 										<li class="techLogo"><img src="images/tech logos/css3-logo-png-transparent.png"/></li>
 										<li class="techLogo"><img src="images/tech logos/HTML5_logo_and_wordmark.svg.png"/></li>
 									</ul></h2></h2>
-								<p>WindBnb is a full stack project that utilizes Express, Sequelize, and React with Redux to deliver a polished, fully functioning clone of AirBnb!</p>
+								<p>This is a full stack project that utilizes Express, Sequelize, and React with Redux to deliver a polished, fully functioning clone of AirBnb!</p>
 								<a href="https://airbnb-clone-final.herokuapp.com/" class="livelink" target="_blank">Live Link</a >
 								<a href="https://github.com/amvo24/Airbnb-Clone-final" class="sourcecode" target="_blank">Source Code</a >
 							</div>
 						</section>
-						<section class="spotlight projectSection" id="gym_genius">
+						<!-- <section class="spotlight projectSection" id="gym_genius">
 							<div class="image"><img src="images/pic03.jpg" alt="" /></div><div class="content">
 								<h2>Gym Genius<br />
 									<ul class="techLogoList">
@@ -136,11 +175,11 @@
 									</ul></h2></h2></h2>
 								<p>This project is a workout planner application that generates personalized workout plans for users based on their fitness goals and preferences.</p>
 							</div>
-						</section>
+						</section> -->
 					</section>
 
 				<!-- Three -->
-					<section id="three" class="wrapper style3 special">
+					<!-- <section id="three" class="wrapper style3 special">
 						<div class="inner">
 							<header class="major">
 								<h2>Technologies I work with</h2>
@@ -174,7 +213,7 @@
 								</li>
 							</ul>
 						</div>
-					</section>
+					</section> -->
 
 				<!-- Contact -->
 					<section id="contactMe" class="wrapper style4">
@@ -203,7 +242,6 @@
 										</ul>
 									</form>
 								</div>
-								<div class="verticalDivider"></div>
 								<div class="contactInformation">
 									<div class="contactPhone">Phone</div>
 									<div class="contactEmail">Email</div>
